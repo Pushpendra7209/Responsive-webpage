@@ -1,0 +1,325 @@
+body {
+    background-color: #ede8d8;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 12%;
+}
+
+.header {
+    border-top: 3px solid #6f6b5f;
+    background-color: #ffbf00;
+    display: flex;
+    justify-content: space-between;
+}
+.header-content {
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.logos{
+    display: flex;
+}
+div.triangle-down {
+    border-left: 1.25rem solid transparent;
+    border-right: 1.25rem solid transparent;
+    border-top: 1rem solid rgb(232, 224, 224);
+}
+.triangle {
+    padding: 0.6rem;
+}
+.upper {
+    display: flex;
+}
+.lower {
+    margin-left: 1.25rem;
+    margin-top: -0.4rem;
+    border-top: 2px solid rgb(164, 75, 75);
+    width: 2.5rem;
+    border-width: 0.1rem;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgb(75, 69, 69);
+}
+
+
+.social-media {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-icon {
+    display: flex;
+}
+
+.logo-icon div {
+    padding: 0.25rem;
+}
+.facebook:hover,
+.linkdin:hover,
+.twitter:hover {
+    opacity: 0.7;
+}
+.facebook[data-icon]:before,
+.twitter[data-icon]:before,
+.linkdin[data-icon]:before {
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+.facebook {
+    color: rgb(252, 191, 8);
+    background-color: rgb(241, 241, 254);
+    text-decoration: none;
+    border-radius: 0.1rem;
+    padding: 0.2rem;
+}
+.linkdin,
+.twitter {
+    color: rgb(252, 191, 8);
+    background-color: rgb(104, 96, 96);
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0.2rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home {
+    display: flex;
+    border-left: 0.1px solid rgb(211, 211, 211);
+}
+div.topnav-right a {
+    display: flex;
+    border-left: 0.1px solid rgb(211, 211, 211);
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #6f6b5f;
+    border-right: 0.1px solid rgb(211, 211, 211);
+    padding: 0.3rem 0.8rem;
+}
+.navbar a:hover {
+    color: #ff8c00;
+    background: #d0c8b1;
+}
+.navbar .home a.active {
+    background: #d0c8b1;
+    color: #ff8c00;
+    padding: 0.3rem 0.8rem;
+    border-left: 0.1px solid rgb(211, 211, 211);
+}
+
+
+.img-container img {
+    width: 100%;
+}
+.img-container {
+    position: relative;
+}
+.top-left {
+    position: absolute;
+    top: -3px;
+    background: linear-gradient(12.5deg, rgba(239, 236, 236, 0.5) 50%, transparent 50%);
+    height: 100%;
+    width: 100%;
+}
+
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    background-color: #f6f3eb;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 5px 2px #aeadad;
+}
+.flex-container p {
+    color: #7b7972;
+}
+section.card {
+    padding: 1rem;
+}
+.flex-container div {
+    background-color: #f0b000;
+    margin-top: 2.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f3eb;
+}
+.card div[data-icon] {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4 {
+    font-size: large;
+}
+.flex-container .card .button {
+    margin: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #f0b000;
+    text-decoration: none;
+    color: #f0b000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card .button:hover {
+    background-color: #f0b000;
+    color: #f6f3eb;
+}
+.footer-nav {
+    background-color: #666666;
+    padding: 0.5rem;
+    text-align: center;
+}
+.footer-nav a:link {
+    color: rgb(216, 221, 225);
+    text-decoration: none;
+    padding: 0 1rem;
+    border-right: 2px solid rgb(216, 221, 225);
+}
+.footer-nav a.contact {
+    border-style: none;
+}
+.footer-nav a:hover {
+    color: rgb(252, 166, 7);
+}
+footer .footer-nav .actives {
+    color: rgb(247, 166, 16);
+}
+footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 0.2rem;
+    text-align: center;
+    background-color: #7c7c7c;
+    padding-bottom: 1.5rem;
+}
+footer p {
+    color: rgb(216, 221, 225);
+}
+div.footer {
+    line-height: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+    main.header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-content .logos {
+        justify-content: center;
+    }
+
+    .navbar a {
+        display: flex;
+        border-style: none;
+        margin-top: 0.5rem;
+    }
+    div.topnav-right a {
+        border-style: none;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        border-style: none;
+    }
+    .active {
+        justify-content: center;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        /* padding: rem; */
+    }
+    section.card {
+        /* border: 1px solid rgb(204, 197, 197); */
+        /* border-radius: 0.25rem; */
+        /* padding: 2rem; */
+    }
+
+
+    .footer-nav a:link {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        border-style: none;
+    }
+
+    footer .footer-nav .actives {
+        color: rgb(247, 166, 16);
+    }
+}
+@media (min-width: 2900px) {
+    .container{
+        height: 23vw;
+    }
+    
+    .flex-container {
+       height: 100%;
+       /* padding: 0; */
+       /* padding:1rem; */
+       /* gap: 20rem; */
+
+    }
+    section.card{
+        padding: 2vw;
+    }
+    .flex-container div{
+        font-size: 2vw;
+    }
+    .card div[data-icon] {
+
+        padding: 1.5vw;
+        /* margin-top: 5rem;   */
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+    h4 {
+        font-size: 1.2vw;
+    }
+    .card p{
+        margin-top: -0.8vw;
+        font-size: 1vw;
+    }
+    .flex-container .card .button {
+        /* padding: 2rem 4rem; */
+        font-size: 1vw;
+        /* margin: 4rem; */
+    }
+    .card .button:hover {
+        background-color: #f0b000;
+        color: #f6f3eb;
+    }
+}
